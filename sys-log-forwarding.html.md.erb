@@ -1,0 +1,20 @@
+---
+title: Enabling System Log Forwarding
+owner: APM
+---
+
+<strong><%= modified_date %></strong>
+
+This topic explains how to forward logs to an external aggregator service.
+
+## <a id='syslog-forward'></a> Enabling System Log Forwarding ##
+
+Elastic Runtime can forward log data to an external aggregator service instead of routing it to the Loggregator Firehose. System log forwarding for [Pivotal Cloud Foundry&reg;](https://network.pivotal.io/products/pivotal-cf) (PCF) is managed through the **PCF Ops Manager Installation Dashboard**. To enable syslog forwarding:
+
+1. Click the **Elastic Runtime** tile.
+1. Select **System Logging**.
+1. Enter the Hostname, Port, and Protocol for your third-party log management service.
+1. (Optional) Increase the drain buffer size to prevent loss of log data.
+1. Click **Save**.
+1. Click **Apply Changes**.
+<%= image_tag 'ert_syslog_config.png' %>
